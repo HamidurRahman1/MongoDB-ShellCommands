@@ -10,3 +10,5 @@ MongoDB Commands using Shell on MacOSX
 | `$ mongo` | Opens MongoDB shell |
 | &nbsp; | &nbsp; |
 | `$ show dbs/databases` | displays all available databases |
+| `$ use <db-name>` | switch to `<db-name>` if exists, otherwise a new database with `<db-name>` will be created. The newly created database will not be actually created until a document has been inserted. if the collection is also not created then it will be created when inserting document into it. |
+| `$ db` | displays currently selected database |
