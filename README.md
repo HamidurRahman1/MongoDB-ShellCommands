@@ -21,8 +21,11 @@ MongoDB Commands using Shell on MacOSX
 | Command | Description |
 | --- | --- |
 | `$ show collections` | displays all available collections (tables).
-| `$ db.collection.drop()` | drops the specified collection from the database.
 | `$ db.createCollection('name')` | creates a collection. Error will be displayed if a collection with the same name exists.
-| `$ db.collection.insert(json)` | a new collection will be created on the fly if does not exists and document will be inserted into it.
-| `$ db.collection.count(query)` | without query it will return the total number of documents. With a valid query total matching count will be returned.
+| `$ db.collection.insert(json)` | a new collection gets created on the fly if does not exists and document will be inserted into it.
+| `$ db.collection.count(query)` | without query it will return the total number of documents. With a valid query, total matching count will be returned.
+| `$ db.collection.deleteOne(query)` | drops the first document matching the query.
+| `$ db.collection.deleteMany(query)` | drops all documents matching the query.
 | `$ db.collection.distinct(key)` | returns an array of distinct values specified by the key. Appending `.length` will be display the total number of distinct values.
+| `$ db.collection.drop()` | drops the specified collection from the database.
+| `$ db.collection.find(query)` | returns all documents from the collection. With a valid query, all matching documents will be returned.
