@@ -1,5 +1,7 @@
 *.iml
+*.xml
 *.DS_Store
 target/
 classes/
 .idea/
+src/
