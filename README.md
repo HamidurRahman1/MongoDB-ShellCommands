@@ -1,4 +1,4 @@
-# MongoDBWithJava
+# Frequently used MongoDB Shell Commands
 
 MongoDB Commands using Shell on MacOSX 
 
@@ -29,5 +29,10 @@ MongoDB Commands using Shell on MacOSX
 | `$ db.collection.distinct("field", optionalQuery)` | returns an array of distinct values specified by the `field` from all documents. If `query` is specified, then distinct values will be only retrieved from the documents matching the query. Appending `.length` will be display the total number of distinct values.
 | `$ db.collection.drop()` | drops the specified collection from the database.
 | `$ db.collection.find(optionalQuery, optionalProjection)` | returns all documents from the collection. With a valid query, all matching documents will be returned.
-| `$ db.collection.findOne(query, optionalProjection)` | returns a document matching the query. If multiple documents matches then the first document will be based on natural ordering on the disk.
+| `$ db.collection.findOne(optionalQuery, optionalProjection)` | returns a document matching the query. If multiple documents matches then the first document will be based on natural ordering on the disk.
 | `$ db.collection.findOneAndDelete(query, options)` | finds and delete a document matching the query. Options can take sort and projection.
+| `$ db.collection.findOneAndReplace(query, newDocument)` | finds and replace a document matching the query.
+| `$ db.collection.findOneAndUpdate(query, updateDocumentOrAggregationPipeline)` | finds and update a document matching the query.
+| `$ db.collection.insert(documentOrArrayOfDocuments)` | inserts the document(s) into the collection.
+| `$ db.collection.insertOne(document)` | inserts the document into the collection.
+| `$ db.collection.insertMany(documents)` | inserts the documents into the collection.
