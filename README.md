@@ -36,3 +36,6 @@ MongoDB Commands using Shell on MacOSX
 | `$ db.collection.insert(documentOrArrayOfDocuments)` | inserts the document(s) into the collection.
 | `$ db.collection.insertOne(document)` | inserts the document into the collection.
 | `$ db.collection.insertMany(documents)` | inserts the documents into the collection.
+| `$ db.collection.remove({})` | removes all documents from the collection.
+| `$ db.collection.remove(query)` | removes all documents from the collection that matches the query.
+| `$ db.collection.remove(query, true)` | removes the first documents that matches the query.
