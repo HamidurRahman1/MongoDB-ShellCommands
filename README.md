@@ -41,4 +41,6 @@ MongoDB Commands using Shell on MacOSX
 | `$ db.collection.remove(query, true)` | removes the first documents that matches the query.
 | `$ db.collection.renameCollection("newCollectionName")` | renames the collection with the specified name. Parameterized collection name must not exists in this database.
 | `$ db.collection.save(document)` | Inserts the document if it does not contain a `_id` field. If it does contains `_id` and matches with an existing `_id` the update operation will occur.
-| `$ db.collection.update(query, updatedFieldOrDocument)` | Modifies a single existing document or field of a document. Multiple document(s) can be modified as well.
+| `$ db.collection.update(query, updatedFieldOrDocument)` | Modifies a single existing document or field of a document that matches the query. Multiple document(s) can be modified as well.
+| `$ db.collection.updateOne(query, updatedFieldOrDocument)` | Modifies a single existing document or field of a document that matches the query.
+| `$ db.collection.updateMany(query, updatedFieldOrDocument)` | Modifies all existing documents or field(s) that matches the query.
