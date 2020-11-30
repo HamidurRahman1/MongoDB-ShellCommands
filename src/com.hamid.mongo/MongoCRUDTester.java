@@ -22,4 +22,9 @@ public class MongoCRUDTester
                 .build());
 
     }
+
+    protected static MongoClient mongoClientFromString()
+    {
+        return MongoClients.create("mongodb://127.0.0.1:27017");
+    }
 }
